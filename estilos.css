@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    background-color: white;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-family:  'Oswald', sans-serif;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;;
+
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.icono1{
+    width: 60px;
+}
+
+/*navegacion*/
+
+.navegacion{
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+}
+
+.navegacion ul{
+    display: flex;
+}
+
+.navegacion ul li{
+    padding: 10px;
+}
+
+.navegacion ul.nav-menu{
+    flex: 1;
+    margin-left: 30px;
+}
+
+.navegacion ul li a:hover{
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+/*carusel*/
+
+.container1{
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+}
+
+.slider{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 600%;
+    animation: cambio 25s infinite;
+}
+
+.slider ul:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+@keyframes cambio{
+    0%{margin-left: 0%;}
+    10%{margin-left: 0%;}
+
+    15%{margin-left: -100%;}
+    25%{margin-left: -100%;}
+
+    30%{margin-left: -200%;}
+    40%{margin-left: -200%;}
+
+    45%{margin-left: -300%;}
+    55%{margin-left: -300%;}
+
+    60%{margin-left: -400%;}
+    70%{margin-left: -400%;}
+
+    75%{margin-left: -500%;}
+    85%{margin-left: -500%;}
+}
+
+/*cubos*/
+
+.ciudades{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin: 10px 0;
+}
+
+.ciudades img{
+    width: 100%;
+    height: 180px;
+}
+
+.ciudades h3{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.ciudades a{
+    padding: 10px 0;
+    color: black;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.ciudades a:hover{
+    text-decoration: underline 3px solid;
+}
